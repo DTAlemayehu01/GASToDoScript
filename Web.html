@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <h1>To Do List!</h1>
+
+    <script src="Code.gs" >
+    function displayList() {
+      compileMessage();
+      document.getElementById('TODOLIST').innerHTML=tasksFormatted
+    }
+    </script>
+
+    <!--
+    <script src = "">
+    //event handlers for buttons
+    let emailButton = document.getElementById("Email List");
+    emailButton.addEventListener('click', messageSent);
+    let appendButton = document.getElementById("Append List");
+    appendButton.addEventListener('click', event => {
+      console.log("pressed append!");
+    });
+    let displayList = document.getElementById("Display List");
+    displayList.addEventListener('click', displayToDo);
+
+    //displays list on html
+    function displayToDo() {
+      google.script.run.testFunc();
+    }
+
+    function messageSent() {
+      google.script.run.compileMessage()
+      google.script.run.pushTaskList()
+    }
+    </script>
+    
+    -->
+
+  </head>
+  <body>
+    <!--<button type="button" id="Email List">Email List</button> 
+    <button type="button" id="Append List">Append List</button>
+    <button type="button" id="Display List" 
+    onclick="document.getElementById('demo').innerHTML = blankPoint"
+    >Display List</button>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button> -->
+
+    <button type="button" onclick="displayList()">Display List</button>
+    <ul id="TODOLIST"></ul>
+  </body>
+</html>
